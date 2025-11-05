@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pallax – Data & IoT Plattform</title>
+  <meta name="description" content="Pallax ist die Data- & IoT-Plattform für Integration, Datenhaltung, Asset-Steuerung und Automatisierung." />
+  <style>
+    :root{
+      --pallax-green:#25bd2c;
+      --ink:#222;
+      --muted:#666;
+      --bg:#f7f8f9;
+      --white:#fff;
+      --radius:14px;
+      --shadow:0 8px 24px rgba(0,0,0,.06);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      color:var(--ink); background:var(--bg);
+    }
+    .wrap{max-width:960px; margin:0 auto; padding:32px 20px 72px}
+    header{display:flex; align-items:center; justify-content:space-between; gap:16px}
+    .brand{display:flex; align-items:center; gap:14px; text-decoration:none; color:inherit}
+    .brand img{height:40px; width:auto; display:block}
+    .nav a{
+      text-decoration:none; color:var(--muted); font-weight:600; margin-left:18px;
+    }
+    .nav a:hover{color:var(--pallax-green)}
+    .hero{margin:48px 0 20px; text-align:center}
+    h1{margin:0 0 10px; font-size:clamp(2rem, 4vw, 3rem); line-height:1.1}
+    .lead{margin:0 auto; max-width:760px; color:var(--muted); font-size:clamp(1rem, 1.2vw, 1.125rem)}
+    .cta{display:flex; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:22px}
+    .btn{
+      appearance:none; border:2px solid var(--pallax-green); padding:12px 18px; border-radius:10px;
+      text-decoration:none; font-weight:700; cursor:pointer; display:inline-block;
+    }
+    .btn-primary{background:var(--pallax-green); color:var(--white)}
+    .btn-outline{background:transparent; color:var(--pallax-green)}
+    .card{
+      margin:26px auto 0; max-width:900px; background:var(--white);
+      border-radius:var(--radius); box-shadow:var(--shadow); padding:18px; border:1px solid #e9ecef;
+    }
+    .quick{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px}
+    .quick a{
+      text-decoration:none; color:var(--ink); border:1px solid #e6e6e6; border-radius:10px; padding:14px;
+      display:flex; align-items:center; justify-content:space-between; background:#fff;
+    }
+    .quick a:hover{border-color:var(--pallax-green)}
+    footer{margin-top:48px; text-align:center; color:var(--muted); font-size:.95rem}
+    footer a{color:var(--pallax-green); text-decoration:none}
+    footer a:hover{text-decoration:underline}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="https://pallax.io" aria-label="Pallax Startseite">
+        <img src="https://pallax.io/wp-content/uploads/2025/04/Logo-Standard.png" alt="Pallax Logo" />
+      </a>
+      <nav class="nav" aria-label="Navigation">
+        <a href="https://pallax.io/kontakt/">Kontakt</a>
+		<a href="https://pallax.io/impressum/">Impressum</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <h1>Data & IoT Plattform</h1>
+      <p class="lead">
+        Pallax ist die zentrale Plattform für die Integration, Speicherung, Verarbeitung und Visualisierung sämtlicher Datenarten!
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://pallax.io">pallax.io Webseite</a>
+        <a class="btn btn-outline" href="https://github.com/pallax-io">GitHub Profil</a>
+      </div>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Pallax · Eine Marke der <a href="https://abl-solutions.com">abl solutions GmbH</a>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
